@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dan David C. Santos | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #0a0f2c; color: #eee; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; background: #020624; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+    .header-left { display: flex; align-items: center; }
+    .header-left img { width: 40px; height: 40px; border-radius: 50%; margin-right: 12px; }
+    header h1 { font-size: 20px; color: #eee; }
+    nav a { margin: 0 12px; text-decoration: none; color: #bbb; font-weight: 500; }
+    nav a:hover { color: #fff; }
+    section { padding: 80px 20px; text-align: center; }
+    .hero { background: linear-gradient(135deg, #1b1f5f, #343c99); color: #fff; padding: 120px 20px; }
+    .hero img { width: 220px; height: 220px; border-radius: 50%; margin-bottom: 20px; border: 4px solid #fff; object-fit: cover; }
+    .hero h2 { font-size: 42px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; max-width: 600px; margin: 0 auto 30px; }
+    .hero a { padding: 12px 28px; background: #fff; color: #1b1f5f; text-decoration: none; border-radius: 30px; font-weight: 600; transition: 0.3s ease; }
+    .hero a:hover { background: #020624; color: #fff; }
+    h3 { font-size: 28px; margin-bottom: 25px; color: #4fa3ff; }
+    .about p, .experience ul, .skills-box { max-width: 800px; margin: 0 auto 20px; padding: 20px; background: #11153c; border-radius: 10px; transition: transform 0.3s ease; }
+    .about p:hover, .experience ul:hover { transform: translateY(-5px); }
+    .skills-box { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
+    .skills-box div { background: #1c2065; padding: 10px 20px; border-radius: 8px; transition: transform 0.3s ease; }
+    .skills-box div:hover { transform: translateY(-5px); }
+    .projects { display: flex; flex-direction: column; align-items: center; }
+    .project-item { display: flex; flex-wrap: wrap; align-items: center; background: #11153c; border-radius: 12px; padding: 20px; margin-bottom: 30px; max-width: 900px; transition: transform 0.3s ease; }
+    .project-item:hover { transform: scale(1.02); }
+    .project-item img { width: 240px; border-radius: 8px; margin-right: 20px; transition: transform 0.3s ease; }
+    .project-item img:hover { transform: scale(1.05); }
+    .project-info { flex: 1; text-align: left; }
+    .project-info h4 { margin-bottom: 10px; color: #fff; }
+    .project-info p { margin-bottom: 8px; }
+    .project-info a { color: #4fa3ff; text-decoration: none; }
+    .project-info a:hover { text-decoration: underline; }
+    .experience ul { list-style: none; padding: 0; text-align: left; }
+    .experience li { margin-bottom: 12px; font-size: 16px; transition: transform 0.3s ease; }
+    .experience li:hover { transform: translateX(5px); }
+    .certificates-container {display: flex; justify-content: center; flex-wrap: nowrap; gap: 20px; overflow-x: auto; padding-bottom: 10px;}
+    .contact p, .contact a { font-size: 16px; color: #ddd; }
+    .contact a { display: inline-block; margin: 10px 12px; text-decoration: none; font-size: 20px; }
+    .contact a:hover { color: #4fa3ff; }
+    footer { text-align: center; padding: 20px; background: #020624; font-size: 14px; color: #999; }
+    footer a { color: #4fa3ff; text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-left">
+    <img src="davidpic.jpeg" alt="Profile Pic">
+    <h1>Dan David C. Santos</h1>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<section class="hero" id="home">
+  <img src="davidpic.jpeg" alt="Profile Picture">
+  <h2>HI, I'M DAN DAVID SANTOS</h2>
+  <p>A Computer Science Graduate eager to explore opportunities in AI modeling, data analysis, and dynamic tech environments where I can learn and contribute meaningfully.</p>
+  <a href="#projects">See My Projects</a>
+</section>
+<section class="about" id="about">
+  <h3>About Me</h3>
+  <p>A dedicated and detail-driven individual who values continuous learning and growth. I thrive in both independent and collaborative environments, and approach challenges with curiosity, optimism, and a practical mindset to deliver reliable results.</p>
+  <h3>Skills</h3>
+  <div class="skills-box">
+    <div>AI Modeling</div>
+    <div>Machine Learning</div>
+    <div>Python</div>
+    <div>PHP</div>
+    <div>Laravel</div>
+    <div>Filament</div>
+    <div>MySQL</div>
+    <div>Data Analysis</div>
+    <div>MS Office</div>
+    <div>Problem Solving</div>
+    <div>Teamwork</div>
+    <div>Time Management</div>
+  </div>
+</section>
+<section class="projects" id="projects">
+  <h3>Projects</h3>
+  <div class="project-item">
+    <img src="chatbot.jpg" alt="Chatbot">
+    <div class="project-info">
+      <h4>First Aid Chatbot</h4>
+      <p>Conversational chatbot using NLP and Streamlit providing real-time, step-by-step first aid guidance for users experiencing medical symptoms or emergencies.</p>
+      <a href="https://github.com/CodeHorizon382/First-Aid-Chatbot" target="_blank">View Code</a>
+    </div>
+  </div>
+  <div class="project-item">
+    <img src="chlorophyll.jpg" alt="Sensor">
+    <div class="project-info">
+      <h4>Chlorophyll-a Soft Sensor</h4>
+      <p>Machine learning-based soft sensor model for predicting chlorophyll-a levels using key water quality parameters for environmental monitoring.</p>
+      <a href="https://github.com/CodeHorizon382/Chlorophyll-a-Soft-Sensor" target="_blank">View Code</a>
+    </div>
+  </div>
+  <div class="project-item">
+    <img src="water.jpg" alt="Intranet">
+    <div class="project-info">
+      <h4>Water Consuming Simulation</h4>
+      <p>An agent-based model built using GAMA and QGIS to simulate household water consumption and distribution through reservoirs and waterways. The model analyzes the effects of different factors on water use and evaluates strategies for conservation. Results support sustainable water management policies for urban planners and authorities.</p>
+      <a href="https://github.com/CodeHorizon382/Water-Consumption-Simulation" target="_blank">View Code</a>
+    </div>
+  </div>
+  <div class="project-item">
+    <img src="library.jpeg" alt="Library System">
+    <div class="project-info">
+      <h4>Library Management System</h4>
+      <p>A user-friendly system for managing book inventories, with features for adding, updating, deleting, and viewing records. The system includes an input panel for book details, action buttons for management tasks, and a dynamic table displaying current inventory, improving library operations and circulation tracking.</p>
+      <a href="https://github.com/CodeHorizon382/Library-Management-System" target="_blank">View Code</a>
+    </div>
+  </div>
+  <div class="project-item">
+    <img src="mushroom.jpg" alt="Chlorophyll Sensor">
+    <div class="project-info">
+      <h4>Mushroom Detection</h4>
+      <p>A vision-based application using Convolutional Neural Networks (CNN) to classify mushrooms as either edible or poisonous based on images. Deployed through a Streamlit web app, it provides real-time classification via image uploads or camera input, promoting food safety and public health.</p>
+      <a href="https://github.com/CodeHorizon382/Mushroom-Detection" target="_blank">View Code</a>
+    </div>
+  </div>
+</section>
+<section class="experience" id="experience">
+  <h3>Experience</h3>
+  <div style="background: #11153c; border-radius: 12px; padding: 20px; max-width: 850px; margin: 0 auto; line-height: 1.7;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+      <h4 style="margin: 0; color: #fff; font-size: 20px;">Software Developer Intern, CPAf - UPLB</h4>
+      <span style="color: #ccc; font-size: 16px;">February – May 2025</span>
+    </div>
+    <ul style="list-style: disc; padding-left: 20px; margin: 0;">
+      <li>Participated in the development of a web-based intranet system for CPAF-UPLB staff and employees using Laravel and Filament framework.</li>
+      <li>Created modules for staff data management within an intranet-based database system.</li>
+      <li>Contributed to improving the organization’s workflow by helping provide a secure and centralized platform for staff data access.</li>
+    </ul>
+  </div>
+
+ <h3 style="margin-top: 50px; font-size: 28px; color: #4fa3ff;">Certificates</h3>
+<p style="max-width: 800px; margin: 10px auto 30px; text-align: center;">
+  Throughout my internship and academic journey, I actively participated in various seminars and webinars to broaden my technical knowledge and skills. The following certificates reflect my commitment to continuous professional development.
+</p>
+
+<div class="certificates-container">
+  <div class="project-item" style="width: 250px; flex-direction: column; padding: 10px;">
+    <img src="cert1.jpg" alt="Certificate 1" style="width: 100%; border-radius: 8px;">
+  </div>
+  <div class="project-item" style="width: 250px; flex-direction: column; padding: 10px;">
+    <img src="cert2.jpg" alt="Certificate 2" style="width: 100%; border-radius: 8px;">
+  </div>
+  <div class="project-item" style="width: 250px; flex-direction: column; padding: 10px;">
+    <img src="cert3.jpg" alt="Certificate 3" style="width: 100%; border-radius: 8px;">
+  </div>
+  <div class="project-item" style="width: 250px; flex-direction: column; padding: 10px;">
+    <img src="cert4.jpg" alt="Certificate 4" style="width: 100%; border-radius: 8px;">
+  </div>
+</div>
+
+</section>
+<section class="contact" id="contact">
+  <h3>Contact</h3>
+  <p><i class="fas fa-phone"></i> 0970-213-9427</p>
+  <p><i class="fas fa-envelope"></i> santosdandavid27@gmail.com</p>
+  <a href="https://linkedin.com/in/santos-dan-david-c-4959ba365" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/CodeHorizon382" target="_blank"><i class="fab fa-github"></i></a>
+</section>
+<footer>
+  <p>Connect with me:</p>
+  <a href="https://linkedin.com/in/santos-dan-david-c-4959ba365" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/CodeHorizon382" target="_blank"><i class="fab fa-github"></i></a>
+  <div style="margin-top: 10px;">
+    <a href="davidresume.pdf" download>Download My CV</a>
+  </div>
+</footer>
+</body>
+</html>
